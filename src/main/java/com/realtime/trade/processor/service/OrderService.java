@@ -23,6 +23,4 @@ public class OrderService {
 	        kafkaTemplate.send("orders-topic", order.getOrderId().toString(), order);
 	        System.out.println("Message posted to Kafka Broker:"+order);
 	    }
-
-
 }
